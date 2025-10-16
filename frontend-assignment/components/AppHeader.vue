@@ -30,8 +30,10 @@
         </a>
       </nav>
       
-      <!-- Empty div to balance the layout -->
-      <div style="width: 80px;"></div>
+      <!-- Sandbox Box -->
+      <div class="sandbox-box">
+        <span class="sandbox-text">Start sandbox</span>
+      </div>
     </div>
   </header>
 </template>
@@ -129,5 +131,31 @@
   nav {
     gap: 0.75rem !important;
   }
+}
+
+/* Sandbox Box Styles */
+.sandbox-box {
+  background-color: #F9A71E;
+  /* padding: 6px 0px; */
+  border-radius: 6px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.sandbox-text {
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  line-height: 100%;
+  letter-spacing: 0%;
+  color: #0F1026;
+  width: 50px;
+  height: 29px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  opacity: 1;
+  white-space: nowrap;
 }
 </style>
